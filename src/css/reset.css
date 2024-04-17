@@ -18,3 +18,8 @@ ul {
 img {
   max-width: 100%;
 }
+
+input,
+textarea {
+  border: 1px solid black;
+}
