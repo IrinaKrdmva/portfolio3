@@ -9,15 +9,13 @@ body {
   background-size: 120% 120%;
 }
 
+/*===== HEADER =====*/
+
 .cabecalho {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.875rem 0.9375rem;
-}
-
-.cabecalho * {
-  /* border: 1px solid red; */
 }
 
 .cabecalho .brand a {
@@ -57,3 +55,6 @@ body {
 .cabecalho .menu ul li:first-child {
   border-right: 1px solid black;
 }
+
+/*===== MAIN =====*/
+/*===== FOOTER =====*/
