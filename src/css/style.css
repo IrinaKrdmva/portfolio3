@@ -8,3 +8,52 @@ body {
   margin: 0 auto;
   background-size: 120% 120%;
 }
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.875rem 0.9375rem;
+}
+
+.cabecalho * {
+  /* border: 1px solid red; */
+}
+
+.cabecalho .brand a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.cabecalho .brand .circle {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  background-color: coral;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.cabecalho .brand p {
+  text-transform: capitalize;
+  padding-left: 4.1rem;
+}
+
+.cabecalho .menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho .menu ul li {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0 0.5rem;
+}
+
+.cabecalho .menu ul li:first-child {
+  border-right: 1px solid black;
+}
