@@ -1,0 +1,21 @@
+@media all and (max-width: 740px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 1.875rem;
+    text-align: center;
+  }
+
+  .footer-col ul {
+    justify-content: center;
+  }
+
+  .footer-col h1::before {
+    all: unset;
+  }
+}
+
+@media all and (max-width: 555px) {
+  .footer-col {
+    width: 100%;
+  }
+}
