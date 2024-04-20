@@ -8,6 +8,7 @@ body {
   height: 100%;
   margin: 0 auto;
   background-size: 120% 120%;
+  border: 1px solid red;
 }
 
 /*===== HEADER =====*/
@@ -16,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.875rem 0.9375rem;
+  padding: 1.875rem 5%;
 }
 
 .cabecalho .brand a {
