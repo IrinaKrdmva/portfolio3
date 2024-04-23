@@ -22,13 +22,13 @@ body {
   padding: 1.875rem 5%;
 }
 
-.cabecalho .brand a {
+.brand a {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.cabecalho .brand .circle {
+.circle {
   width: 2rem;
   height: 2rem;
   border: none;
@@ -40,27 +40,125 @@ body {
   font-weight: bold;
 }
 
-.cabecalho .brand p {
+.brand p {
   text-transform: capitalize;
   padding-left: 4.1rem;
 }
 
-.cabecalho .menu ul {
+.menu ul {
   display: flex;
   align-items: center;
 }
 
-.cabecalho .menu ul li {
+.menu ul li {
   text-align: center;
   text-transform: capitalize;
   padding: 0 0.5rem;
 }
 
-.cabecalho .menu ul li:first-child {
+.menu ul li:first-child {
   border-right: 1px solid black;
 }
 
 /*===== MAIN =====*/
+.home {
+  display: flex;
+  min-height: calc(100vh - 120px);
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  letter-spacing: 0.12rem;
+  padding: 0 0.9375rem;
+  max-width: 50%;
+  border: 1px solid red;
+}
+
+.informacoes h1 {
+  font-size: 5.5rem;
+}
+
+.informacoes p {
+  font-size: 1rem;
+}
+
+.container-foto {
+  border: 1px solid red;
+}
+
+.foto {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-foto img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.foto.sombra-interna {
+  /*sem espaço porque são 2 classe do mm elemento*/
+  background: linear-gradient(to right, white, lightgray, gray);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.links-paginas {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.links-paginas li {
+  border: 1px solid blue;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: coral;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.links-paginas li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
 /*===== FOOTER =====*/
 footer {
   display: flex;
