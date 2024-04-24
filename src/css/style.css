@@ -77,7 +77,6 @@ body {
   letter-spacing: 0.12rem;
   padding: 0 0.9375rem;
   max-width: 50%;
-  border: 1px solid red;
 }
 
 .informacoes h1 {
@@ -86,10 +85,6 @@ body {
 
 .informacoes p {
   font-size: 1rem;
-}
-
-.container-foto {
-  border: 1px solid red;
 }
 
 .foto {
@@ -139,12 +134,7 @@ body {
 }
 
 .links-paginas li {
-  border: 1px solid blue;
-  width: 7.5rem;
-  height: 7.5rem;
-  border-radius: 50%;
   text-align: center;
-  background-color: coral;
   margin: 0 1rem;
   font-weight: bold;
 }
@@ -154,9 +144,32 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
   padding: 3rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
+}
+
+.links-paginas li a:hover {
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+.cv {
+  background-color: rgba(238, 163, 2, 1);
+  border: 1px solid rgba(89, 62, 3, 1);
+}
+
+.projetos {
+  background-color: rgba(255, 59, 37, 1);
+  border: 1px solid rgba(85, 20, 12, 1);
+}
+
+.contacto {
+  background-color: rgba(128, 216, 218, 1);
+  border: 1px solid rgba(19, 84, 84, 1);
 }
 
 /*===== FOOTER =====*/
@@ -165,7 +178,6 @@ footer {
   flex-wrap: wrap;
   margin-top: auto;
   padding: 2.5rem 5%;
-  background-color: chartreuse;
 }
 
 .footer-col {
