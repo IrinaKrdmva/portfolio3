@@ -196,6 +196,24 @@ body {
   border: 1px solid red;
 }
 
+.projects a img {
+  width: 25rem;
+  height: 37.5rem;
+}
+
+.corpo {
+  border: 1px solid blue;
+  padding: 18.75rem 0;
+  text-align: center;
+}
+
+.info-project {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
 /*===== FOOTER =====*/
 footer {
   display: flex;
