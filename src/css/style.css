@@ -231,6 +231,18 @@ body {
   background-color: black;
 }
 
+/*===== CONTACTO =====*/
+
+.contact {
+  display: flex;
+  min-height: calc(100vh - 120px);
+  align-items: center;
+  gap: 5rem;
+  padding: 0 8.6rem;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
 /*===== FOOTER =====*/
 footer {
   display: flex;
