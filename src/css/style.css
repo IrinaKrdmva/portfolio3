@@ -198,7 +198,9 @@ body {
   position: relative;
 }
 
-.projects a {
+.projects a,
+.corpo,
+.info-project {
   width: 500px;
   height: 700px;
 }
@@ -209,8 +211,6 @@ body {
 }
 
 .corpo {
-  width: 500px;
-  height: 700px;
   border: 1px solid blue;
   padding: 18.75rem 2rem;
   text-align: center;
@@ -219,7 +219,7 @@ body {
 .info-project {
   border: 1px solid red;
   top: 0;
-  width: 100%;
+  padding: 20rem 5rem;
   background-color: black;
   color: white;
   text-align: center;
