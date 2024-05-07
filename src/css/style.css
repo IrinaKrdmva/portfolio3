@@ -211,13 +211,11 @@ body {
 }
 
 .corpo {
-  border: 1px solid blue;
   padding: 18.75rem 2rem;
   text-align: center;
 }
 
 .info-project {
-  border: 1px solid red;
   top: 0;
   padding: 20rem 5rem;
   background-color: black;
