@@ -60,16 +60,40 @@
         </div>
       </div>
       <div class="formulario">
-        <form action="">
+        <form>
           <label for="firstname">Nome</label>
-          <input type="text" name="firstname" id="firstname" />
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Nome"
+            required
+          />
           <label for="lastname">Sobrenome</label>
-          <input type="text" name="lastname" id="lastname" />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Sobrenome"
+            required
+          />
           <br />
           <label for="email">Email*</label>
-          <input type="email" name="correio" id="correio" />
+          <input
+            type="email"
+            name="correio"
+            id="correio"
+            placeholder="Email"
+            required
+          />
           <label for="assunto">Assunto</label>
-          <input type="text" name="assunto" id="assunto" />
+          <input
+            type="text"
+            name="assunto"
+            id="assunto"
+            placeholder="Assunto"
+            required
+          />
           <br />
           <label for="mensagem">Mensagem</label>
           <textarea
@@ -77,6 +101,7 @@
             id="mensagem"
             cols="30"
             rows="10"
+            required
           ></textarea>
           <button type="submit" class="btn">Enviar</button>
         </form>
