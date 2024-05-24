@@ -9,9 +9,12 @@ body {
   min-height: 100%;
   margin: 0 auto;
   background-size: 120% 120%;
-  background-image: linear-gradient(to right, #d7d2cc, #304352);
+  background-image: url(/src/images/background.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
 /*===== HEADER =====*/
@@ -27,6 +30,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
 
 .circle {
@@ -57,8 +61,12 @@ body {
   padding: 0 0.5rem;
 }
 
+.menu ul li a {
+  color: #fff;
+}
+
 .menu ul li:first-child {
-  border-right: 1px solid black;
+  border-right: 1px solid #fff;
 }
 
 /*===== MAIN =====*/
@@ -107,7 +115,12 @@ body {
 
 .foto.sombra-interna {
   /*sem espaço porque são 2 classe do mm elemento*/
-  background: linear-gradient(to right, white, lightgray, gray);
+  background: linear-gradient(
+    to right,
+    rgb(1, 120, 246),
+    rgb(64, 255, 0),
+    rgb(248, 1, 71)
+  );
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
 }
@@ -239,8 +252,87 @@ body {
   align-items: center;
   gap: 5rem;
   padding: 0 8.6rem;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 5rem;
+}
+
+.contact form {
+  width: 41.875rem;
+  height: 37.5rem;
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  border-radius: 0.9375rem;
+  background: rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  backdrop-filter: blur(1.875rem);
+}
+
+.contact form h1 {
+  line-height: 2;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  width: 31.25rem;
+  text-align: center;
+}
+
+.contact form input {
+  width: 18.75rem;
+  height: 3.125rem;
+  padding-left: 0.625rem;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 0.625rem;
+  background: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.contact form input::placeholder {
+  color: #fff;
+}
+
+.contact form h4 {
+  font-weight: 300;
+  width: 37.5rem;
+  margin-top: 1.25rem;
+  font-size: 20px;
+}
+
+.contact form textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-weight: 200;
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  outline: none;
+  min-height: 5.625rem;
+  max-height: 5.625rem;
+  min-width: 38.75rem;
+  max-width: 38.75rem;
+}
+
+#enviar {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.3125rem;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 12.5rem;
+  height: 3.75rem;
+  padding: 0;
+  margin-bottom: 1.875rem;
+  transition: 0.3s;
+}
+
+#enviar:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s ease-in-out;
 }
 
 /*===== FOOTER =====*/

@@ -47,65 +47,16 @@
       </nav>
     </header>
     <main class="contact">
-      <div class="info">
-        <h1 class="titulo_contacto">Contactos</h1>
-        <p>Vamos conversar sobre as suas ideias!😉</p>
-        <div class="telefone_contactos">
-          <h1>telefone</h1>
-          <p>(+351) 936 075 408</p>
-        </div>
-        <div class="email_contactos">
-          <h1>email</h1>
-          <p>irinamaple84@gmail.com</p>
-        </div>
-      </div>
-      <div class="formulario">
-        <form>
-          <label for="firstname">Nome</label>
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="Nome"
-            required
-          />
-          <label for="lastname">Sobrenome</label>
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Sobrenome"
-            required
-          />
-          <br />
-          <label for="email">Email*</label>
-          <input
-            type="email"
-            name="correio"
-            id="correio"
-            placeholder="Email"
-            required
-          />
-          <label for="assunto">Assunto</label>
-          <input
-            type="text"
-            name="assunto"
-            id="assunto"
-            placeholder="Assunto"
-            required
-          />
-          <br />
-          <label for="mensagem">Mensagem</label>
-          <textarea
-            name="mensagem"
-            id="mensagem"
-            cols="30"
-            rows="10"
-            required
-          ></textarea>
-          <button type="submit" class="btn">Enviar</button>
-        </form>
-      </div>
+      <form>
+        <h1>Vamos Conversar!</h1>
+        <input type="text" id="firstName" placeholder="Nome" required />
+        <input type="text" id="lastName" placeholder="Sobrenome" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Telemóvel" required />
+        <h4>A Tua Mensagem...</h4>
+        <textarea required></textarea>
+        <input type="submit" value="Enviar" id="enviar" />
+      </form>
     </main>
     <footer class="footer">
       <div class="footer-col">
